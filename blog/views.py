@@ -25,4 +25,4 @@ def home(request: HttpRequest):
     return render(request, 'blog/home.html', context)
 
 def aboutUs(request):
-    return HttpResponse('<h3>About Dude</h3>')
+    return render(request, 'blog/about.html')
